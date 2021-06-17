@@ -1,0 +1,46 @@
+.menu {
+
+  &--inner {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      position: relative;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #32353D;
+
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        right: 0;
+        bottom: -21px;
+        left: 0;
+        margin: auto;
+        background-color: #32353D;
+        content: '';
+        opacity: 0;
+        transition: height 0.2s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      span {
+        border-radius: 62.1541px;
+        transform: rotate(-21.42deg);
+        background: linear-gradient(0deg, #FF002E, #FF002E), linear-gradient(0deg, #FF0099, #FF0099), #71A4FF;;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.element {
+  position: absolute;
+  top: 0;
+
+  svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--left {
+    width: 100px;
+    height: 100px;
+    left: -130px;
+    bottom: 70px;
+    margin: auto;
+
+
+    &.animate_svg {
+      svg {
+        visibility: visible;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 1s arrow  forwards;
+      }
+    }
+    &.animate_svg_with_delay {
+      svg {
+        animation-delay: 8.5s;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 4s arrow  5s forwards;
+        visibility: visible;
+
+      }
+    }
+
+    svg {
+      visibility: hidden;
+    }
+
+  }
+
+  &--right {
+    right: -110px;
+    width: 159.05px;
+    height: 152.19px;
+
+    svg {
+      visibility: hidden;
+    }
+
+    &.animate_svg {
+      svg {
+        visibility: visible;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: 1s circle-outline forwards;
+      }
+    }
+    &.animate_svg_with_delay {
+      svg {
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: 4s circle-outline forwards;
+        animation-delay: 7.3s;
+        visibility: visible;
+
+      }
+      }
+  }
+
+  &__body {
+    display: block;
+    position: relative;
+    top: 35px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #B0B0B0;
+  }
+
+  &__text {
+    //position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: 400;
+    word-break: normal;
+    line-height: 1.25;
+  }
+
+  &__number {
+    //position: absolute;
+    padding-bottom: 5px;
+    top: 45px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 34.4402px;
+    font-weight: bold;
+    line-height: 120%;
+  }
+}
+
+@keyframes circle-outline {
+  from {
+    stroke-dashoffset: -800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes arrow {
+  from {
+    stroke-dashoffset: -400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,20 @@
+$fonts-directory: "../fonts";
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("#{$fonts-directory}/Gilroy-Regular.woff2") format("woff2"),
+  url("#{$fonts-directory}/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("#{$fonts-directory}/Gilroy-Regular.woff2") format("woff2"),
+  url("#{$fonts-directory}/Gilroy-Regular.woff") format("woff");
+}
+
