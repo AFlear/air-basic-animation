@@ -22,17 +22,7 @@
         visibility: visible;
         stroke-dasharray: 400;
         stroke-dashoffset: 400;
-        animation: 1s arrow  forwards;
-      }
-    }
-    &.animate_svg_with_delay {
-      svg {
-        animation-delay: 8.5s;
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400;
-        animation: 4s arrow  5s forwards;
-        visibility: visible;
-
+        animation: 5s arrow forwards;
       }
     }
 
@@ -59,16 +49,6 @@
         animation: 1s circle-outline forwards;
       }
     }
-    &.animate_svg_with_delay {
-      svg {
-        stroke-dasharray: 800;
-        stroke-dashoffset: 800;
-        animation: 4s circle-outline forwards;
-        animation-delay: 7.3s;
-        visibility: visible;
-
-      }
-      }
   }
 
   &__body {
@@ -118,7 +98,7 @@
 
 @keyframes arrow {
   from {
-    stroke-dashoffset: -400;
+    stroke-dashoffset: 400;
   }
   to {
     stroke-dashoffset: 0;

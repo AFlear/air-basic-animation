@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="forScroll">
     <div class="header fixed-top">
       <div class="section section--header">
         <div class="container">
@@ -49,8 +49,8 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="section--underline pt-3 element__to__animate header__animate fadeInDown" data-wow-duration="2s">
+      <div class="container" ref="header__animate">
+        <div class="section--underline pt-3">
           <div class="d-flex justify-content-between">
             <a href="#" title="basic">
               <svg width="132" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,53 +107,53 @@
 
     </div>
 
-    <section class="section section--basic" id="first_screen">
+    <section class="section section--basic fixed" id="first_screen">
       <div class="container position-relative">
         <div class="row">
           <div class="col-xs-12">
             <div class="icon--content">
-              <div class="icon icon--right-1 element__to__animate icons  fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-1  icons-right   ">
                 <img :src="ToolBox" alt="Product">
               </div>
-              <div class="icon icon--right-2 element__to__animate icons fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-2  icons-right  ">
                 <img :src="Referral" alt="Product">
               </div>
-              <div class="icon icon--right-3 element__to__animate icons  fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-3  icons-right   ">
                 <img :src="Finances" alt="Product">
               </div>
-              <div class="icon icon--right-4 element__to__animate icons  fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-4  icons-right   ">
                 <img :src="Hack" alt="Product">
               </div>
-              <div class="icon icon--right-5 element__to__animate icons fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-5  icons-right  ">
                 <img :src="Copyright" alt="Product">
               </div>
-              <div class="icon icon--right-6 element__to__animate icons fadeInRightBig " data-wow-duration="1.5s">
+              <div class="icon icon--right-6  icons-right  ">
                 <img :src="Instagram" alt="Product">
               </div>
-              <div class="icon icon--left-1 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s">
+              <div class="icon icon--left-1  icons-left  ">
                 <img :src="Messenger" alt="Product">
               </div>
-              <div class="icon  icon--left-2 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s">
+              <div class="icon  icon--left-2  icons-left  ">
                 <img :src="Design" alt="Product">
               </div>
-              <div class="icon icon--left-3 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s">
+              <div class="icon icon--left-3  icons-left  ">
                 <img :src="Payments" alt="Product">
               </div>
-              <div class="icon icon--left-4 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s">
+              <div class="icon icon--left-4  icons-left  ">
                 <img :src="Music" alt="Product">
               </div>
-              <div class="icon icon--left-5 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s">
+              <div class="icon icon--left-5  icons-left  ">
                 <img :src="Meetups" alt="Product">
               </div>
-              <div class="icon icon--left-6 element__to__animate icons fadeInLeftBig " data-wow-duration="1.5s"
+              <div class="icon icon--left-6  icons-left  "
                    data-wow-delay="0.1s">
                 <img :src="Moderation" alt="Product"></div>
             </div>
 
             <div class="basic">
-              <div class="basic__head">
+              <div class="basic__head" ref="body">
 
-                <div class="basic__title basic__head__animation element__to__animate  fadeInUp" data-wow-duration="2s">
+                <div class="basic__title ">
                   <div class="basic__text--left">
                     Package
                   </div>
@@ -164,18 +164,16 @@
 
               </div>
               <div class="basic__body">
-                <div class="basic__text element__to__animate basic__body__strings fadeInUp" data-wow-duration="1s">
+                <div class="basic__text basic__body__strings body__text-1">
                   16 essential services to support, develop and
                 </div>
-                <div class="basic__text element__to__animate basic__body__strings  fadeInUp " data-wow-duration="1s">
+                <div class="basic__text basic__body__strings  body__text-2">
                   protect your creativity on YouTube and beyond
                 </div>
-                <div class="basic__text--sub  my-2 element__to__animate basic__body__second_animation  fadeInUp"
-                     data-wow-duration="2s">
+                <div class="basic__text--sub body__text-3 mt-3">
                   Accessible immediately after connecting to AIR Creators Ecosystem.
                 </div>
-                <div class="basic__button pt-4 element__to__animate  basic__body__second_animation fadeInUp"
-                     data-wow-duration="2s" data-wow-delay="0.2s">
+                <div class="basic__button pt-4  basic__button mt-4">
                   <a href="#" class="basic-button mx-auto basic-button-big basic-button-blue">
                     Get now </a>
                 </div>
@@ -187,15 +185,12 @@
                       stroke="#B0B0B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div class="element__body">
-                  <div class="element__number element__to__animate right__first__animation  slideInLeft"
-                       data-wow-duration="2.5s" data-wow-delay="0.5s">100%
+                  <div class="element__number  right__first__animation">100%
                   </div>
-                  <div class="element__text element__to__animate right__second__animation  fadeInUp"
-                       data-wow-duration="2s">
+                  <div class="element__text  right__second__animation ">
                     Must Have for
                   </div>
-                  <div class="element__text element__to__animate right__second__animation  fadeInUp"
-                       data-wow-duration="2s">
+                  <div class="element__text  right__second__animation ">
                     YouTubers
                   </div>
                 </div>
@@ -207,13 +202,11 @@
                       stroke="#B0B0B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div class="element__body">
-                  <div class="element__text element__to__animate  left__first__animation fadeInUp"
-                       data-wow-duration="2s">
+                  <div class="element__text   left__first__animation">
                     Not
                     provided by
                   </div>
-                  <div class="element__text element__to__animate left__first__animation  fadeInUp"
-                       data-wow-duration="2s">
+                  <div class="element__text  left__first__animation ">
                     AdSense
                   </div>
                 </div>
@@ -223,12 +216,17 @@
         </div>
       </div>
     </section>
+    <div class="scrollElement"></div>
+
   </div>
 </template>
 
 <script>
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {serverBus} from "@/main";
 
-import {serverBus} from "../main";
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: 'firstScreenManualAnimation',
@@ -246,145 +244,443 @@ export default {
       Music: require('@/assets/svg/music.svg'),
       Meetups: require('@/assets/svg/meetups.svg'),
       Moderation: require('@/assets/svg/moderation.svg'),
-      isAnimated: false,
-      elemsToAnimate: [
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.header__animate'
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.basic__head__animation'
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.basic__body__strings'
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.basic__body__second_animation'
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.right__first__animation'
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.right__second__animation',
-          subElems:
-              {
-                animated: false,
-                classToAdd: ['animate_svg'],
-                classToRemove: '',
-                removeProp: false,
-                selector: '.svg__circle'
-              },
-
-        },
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.left__first__animation',
-          subElems: {
-            animated: false,
-            classToAdd: ['animate_svg'],
-            classToRemove: '',
-            removeProp: false,
-            selector: '.left__arrow__animation'
-          },
-        },
-
-        {
-          animated: false,
-          classToAdd: ['animate', 'wow'],
-          classToRemove: 'element__to__animate',
-          removeProp: true,
-          selector: '.icons'
-        },
-      ],
-      animationCompleted: true
     }
   },
-  methods: {
-    manualTrigger(element) {
-      const elemInDOM = document.querySelectorAll(element.selector);
-      elemInDOM.forEach((elem) => {
-        elem.classList.remove(element.classToRemove);
-        element.classToAdd.forEach((c) => {
-          elem.classList.add(c);
-        })
-        elem.style.removeProperty('animation-iteration-count');
-        elem.style.removeProperty('animation-delay');
-        elem.style.removeProperty('animation-iteration-count');
-        elem.style.removeProperty('animation-name');
-        //Because wow need a bit of time to apply styles before showing elem
-        window.wow.applyStyle(elem, true);
-        setTimeout(() => {
-          window.wow.show(elem);
-        }, 10);
-      })
-      if (element.subElems) {
-        const subElems = document.querySelectorAll(element.subElems.selector);
-        subElems.forEach((elem) => {
-          elem.classList.add('animate_svg')
-        })
-      }
-      setTimeout(() => {
-        element.animated = true;
-        this.animationCompleted = true;
-        this.toggleListener(this.wheelHandler, true)
-      }, 800);
-    },
-
-    wheelHandler: function (e) {
-      if (e.wheelDelta > 5 || e.wheelDelta < -1) {
-        this.toggleListener(this.wheelHandler, false);
-
-        const currentElemToAnim = this.elemsToAnimate.find(el => !el.animated)
-        this.animationCompleted = false;
-        if (currentElemToAnim) {
-          this.manualTrigger(currentElemToAnim);
-        } else {
-          this.toggleListener(this.wheelHandler, false);
-          serverBus.$emit('finished');
-        }
-        this.toggleListener(this.wheelHandler, this.animationCompleted)
-      }
-    },
-
-    toggleListener: function (listener, add) {
-      if (add) {
-        window.document.addEventListener("wheel", listener, {passive: false})
-      } else {
-        window.document.removeEventListener("wheel", listener)
-      }
-    }
-  },
+  methods: {},
   mounted() {
-    this.toggleListener(this.wheelHandler, true);
+    gsap.registerPlugin(ScrollTrigger);
+    const firstTime = gsap.timeline();
+    ScrollTrigger.create({
+      animation: firstTime,
+      start: "1% 1%",
+      end: '2% 2%',
+      scrub: 2,
+    });
+
+    firstTime.fromTo(this.$refs.header__animate, {
+      autoAlpha: 0,
+      y: -80,
+    }, {
+      autoAlpha: 1,
+      y: 0,
+      duration: 2
+    }, 0)
+
+    const body = gsap.timeline();
+    ScrollTrigger.create({
+      animation: body,
+      start: "3%",
+      end: '9%',
+      scrub: 4,
+    });
+    body.fromTo(this.$refs.body, {
+      autoAlpha: 0,
+      y: 10,
+      duration: 3
+    }, {
+      autoAlpha: 1,
+      y: -50,
+      duration: 3
+    }, 1)
+
+    const lowerT = gsap.timeline();
+    const lower = document.querySelectorAll('.body__text-1');
+    ScrollTrigger.create({
+      animation: lowerT,
+      start: "10% 10%",
+      end: '13% 13%',
+      scrub: 2.
+    });
+    lower.forEach((e) => {
+      lowerT.fromTo(e, {
+        autoAlpha: 0,
+        y: 0,
+      }, {
+        autoAlpha: 1,
+        y: -20,
+        duration: 3
+      }, 2)
+    });
+
+    const lowerT2 = gsap.timeline();
+    const lower2 = document.querySelectorAll('.body__text-2');
+    ScrollTrigger.create({
+      animation: lowerT2,
+      start: "11% 11%",
+      end: '14% 14%',
+      scrub: 2,
+    });
+    lower2.forEach((e) => {
+      lowerT2.fromTo(e, {
+        autoAlpha: 0,
+        y: 0,
+        duration: 2
+      }, {
+        autoAlpha: 1,
+        y: -20,
+        duration: 3
+      }, 2)
+    });
+
+    const lower__secondT = gsap.timeline();
+    const lower__second = document.querySelectorAll('.body__text-3');
+    ScrollTrigger.create({
+      animation: lower__secondT,
+      start: "14%",
+      end: '17%',
+      scrub: 3,
+    });
+    lower__second.forEach((e) => {
+      lower__secondT.fromTo(e, {
+        autoAlpha: 0,
+        y: 0,
+        duration: 3
+      }, {
+        autoAlpha: 1,
+        y: -30,
+        duration: 3
+      }, 2)
+    });
+
+    const animateButton = gsap.timeline();
+    const aButton = document.querySelectorAll('.basic__button');
+    ScrollTrigger.create({
+      animation: animateButton,
+      start: "18%",
+      end: '23%',
+      scrub: 3,
+    });
+    aButton.forEach((e) => {
+      animateButton.fromTo(e, {
+        autoAlpha: 0,
+        y: 0,
+        duration: 3
+      }, {
+        autoAlpha: 1,
+        y: -40,
+        duration: 3
+      }, 3)
+    });
+
+
+    const right__first__animationT = gsap.timeline();
+    const right__first__animation = document.querySelectorAll('.right__first__animation');
+    ScrollTrigger.create({
+      animation: right__first__animationT,
+      start: "24%",
+      end: '26%',
+      scrub: 2,
+    });
+    right__first__animation.forEach((e) => {
+      right__first__animationT.fromTo(e, {
+        autoAlpha: 0,
+        x: -30,
+        duration: 2,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 4)
+    });
+
+
+    const right__second__animationT = gsap.timeline();
+    const right__second__animation = document.querySelectorAll('.right__second__animation');
+    ScrollTrigger.create({
+      animation: right__second__animationT,
+      start: "24%",
+      end: '26%',
+      scrub: 2
+    });
+    right__second__animation.forEach((e) => {
+      right__second__animationT.fromTo(e, {
+        autoAlpha: 0,
+        y: 20,
+        duration: 0.5,
+      }, {
+        autoAlpha: 1,
+        y: -5,
+        duration: 1,
+        onStart: () => {
+          document.getElementsByClassName('svg__circle')[0].classList.add('animate_svg')
+        }
+      }, 4)
+    });
+
+
+
+    const left__first__animationT = gsap.timeline();
+    const left__first__animation = document.querySelectorAll('.left__first__animation');
+    ScrollTrigger.create({
+      animation: left__first__animationT,
+      start: "27%",
+      end: '30%',
+      scrub: 3,
+    });
+    left__first__animation.forEach((e) => {
+      left__first__animationT.fromTo(e, {
+        autoAlpha: 0,
+        y: 20,
+      }, {
+        autoAlpha: 1,
+        y: 0,
+        duration: 2,
+        onStart: () => {
+          document.getElementsByClassName('left__arrow__animation')[0].classList.add('animate_svg')
+        }
+      }, 5);
+    });
+
+
+    const iconsLeftT = gsap.timeline();
+    const iconsLeft = document.querySelectorAll('.icon--left-1');
+    ScrollTrigger.create({
+      animation: iconsLeftT,
+      start: "31%",
+      end: '40%',
+      scrub: 1,
+    });
+    iconsLeft.forEach((e) => {
+      iconsLeftT.fromTo(e, {
+        autoAlpha: 0,
+        x: -50,
+        duration: 3
+      }, {
+        autoAlpha: 1,
+        x: 10,
+        duration: 3,
+      }, 6)
+    });
+
+    const iconsLeftT2 = gsap.timeline();
+    const iconsLeft2 = document.querySelectorAll('.icon--left-2');
+    ScrollTrigger.create({
+      animation: iconsLeftT2,
+      start: "31%",
+      end: '40%',
+      scrub: 2,
+    });
+    iconsLeft2.forEach((e) => {
+      iconsLeftT2.fromTo(e, {
+        autoAlpha: 0,
+        x: -60,
+        duration: 2
+      }, {
+        autoAlpha: 1,
+        x: 20,
+        duration: 2,
+      }, 6)
+    });
+
+
+    const iconsLeftT3 = gsap.timeline();
+    const iconsLeft3 = document.querySelectorAll('.icon--left-3');
+    ScrollTrigger.create({
+      animation: iconsLeftT3,
+      start: "31%",
+      end: '40%',
+      scrub: 3,
+    });
+    iconsLeft3.forEach((e) => {
+      iconsLeftT3.fromTo(e, {
+        autoAlpha: 0,
+        x: -70,
+        duration: 3
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 3,
+      }, 6)
+    });
+
+    const iconsLeftT4 = gsap.timeline();
+    const iconsLeft4 = document.querySelectorAll('.icon--left-4');
+    ScrollTrigger.create({
+      animation: iconsLeftT4,
+      start: "31%",
+      end: '40%',
+      scrub: 3,
+    });
+    iconsLeft4.forEach((e) => {
+      iconsLeftT4.fromTo(e, {
+        autoAlpha: 0,
+        x: -60,
+        duration: 2
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+
+    const iconsLeftT5 = gsap.timeline();
+    const iconsLeft5 = document.querySelectorAll('.icon--left-5');
+    ScrollTrigger.create({
+      animation: iconsLeftT5,
+      start: "31%",
+      end: '40%',
+      scrub: 2,
+    });
+    iconsLeft5.forEach((e) => {
+      iconsLeftT5.fromTo(e, {
+        autoAlpha: 0,
+        x: -70,
+        duration: 3
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 3,
+      }, 6)
+    });
+
+    const iconsLeftT6 = gsap.timeline();
+    const iconsLeft6 = document.querySelectorAll('.icon--left-6');
+    ScrollTrigger.create({
+      animation: iconsLeftT6,
+      start: "31%",
+      end: '40%',
+      scrub: 3,
+    });
+    iconsLeft6.forEach((e) => {
+      iconsLeftT6.fromTo(e, {
+        autoAlpha: 0,
+        x: -80,
+        duration: 2
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+    const iconsRightT = gsap.timeline();
+    const iconsRight = document.querySelectorAll('.icon--right-1');
+    ScrollTrigger.create({
+      animation: iconsRightT,
+      start: "31%",
+      end: '40%',
+      scrub: 1,
+    });
+    iconsRight.forEach((e) => {
+      iconsRightT.fromTo(e, {
+        autoAlpha: 0,
+        x: 50,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+    const iconsRightT2 = gsap.timeline();
+    const iconsRight2 = document.querySelectorAll('.icon--right-2');
+    ScrollTrigger.create({
+      animation: iconsRightT2,
+      start: "31%",
+      end: '40%',
+      scrub: 2,
+    });
+    iconsRight2.forEach((e) => {
+      iconsRightT.fromTo(e, {
+        autoAlpha: 0,
+        x: 60,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2
+      }, 6)
+    });
+
+    const iconsRightT3 = gsap.timeline();
+    const iconsRight3 = document.querySelectorAll('.icon--right-3');
+    ScrollTrigger.create({
+      animation: iconsRightT3,
+      start: "31%",
+      end: '40%',
+      scrub: 2,
+    });
+    iconsRight3.forEach((e) => {
+      iconsRightT.fromTo(e, {
+        autoAlpha: 0,
+        x: 40,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+    const iconsRightT4 = gsap.timeline();
+    const iconsRight4 = document.querySelectorAll('.icon--right-4');
+    ScrollTrigger.create({
+      animation: iconsRightT4,
+      start: "31%",
+      end: '40%',
+      scrub: 3
+    });
+    iconsRight4.forEach((e) => {
+      iconsRightT4.fromTo(e, {
+        autoAlpha: 0,
+        x: 70,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+    const iconsRightT5 = gsap.timeline();
+    const iconsRight5 = document.querySelectorAll('.icon--right-5');
+    ScrollTrigger.create({
+      animation: iconsRightT5,
+      start: "31%",
+      end: '40%',
+      scrub: 2
+    });
+    iconsRight5.forEach((e) => {
+      iconsRightT5.fromTo(e, {
+        autoAlpha: 0,
+        x: 60,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+      }, 6)
+    });
+
+    const iconsRightT6 = gsap.timeline();
+    const iconsRight6 = document.querySelectorAll('.icon--right-6');
+    ScrollTrigger.create({
+      animation: iconsRightT6,
+      start: "31%",
+      end: '40%',
+      scrub: 3
+    });
+    iconsRight6.forEach((e) => {
+      iconsRightT6.fromTo(e, {
+        autoAlpha: 0,
+        x: 50,
+      }, {
+        autoAlpha: 1,
+        x: 0,
+        duration: 2,
+
+      }, 6)
+    });
+    const last = gsap.timeline();
+    ScrollTrigger.create({
+      animation: last,
+      start: "50%",
+      end: '100%',
+      scrub: 1,
+      onEnter: () => {
+        document.getElementsByClassName('section--basic')[0].classList.remove('fixed');
+        serverBus.$emit('finished');
+        console.log('1')
+      }
+    });
+    last.play();
   }
 }
 </script>
-<style scoped>
-
-</style>
