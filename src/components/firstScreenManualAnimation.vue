@@ -472,15 +472,15 @@ export default {
       animation: iconsLeftT2,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 5,
       once: true
 
     });
     iconsLeft2.forEach((e) => {
       iconsLeftT2.fromTo(e, {
         autoAlpha: 0,
-        x: -200,
-        duration: 2,
+        x: -350,
+        duration: 3,
         delay: 1
       }, {
         autoAlpha: 1,
@@ -503,7 +503,7 @@ export default {
     iconsLeft3.forEach((e) => {
       iconsLeftT3.fromTo(e, {
         autoAlpha: 0,
-        x: -200,
+        x: -230,
         duration: 3
       }, {
         autoAlpha: 1,
@@ -518,14 +518,14 @@ export default {
       animation: iconsLeftT4,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 5,
       once: true
     });
     iconsLeft4.forEach((e) => {
       iconsLeftT4.fromTo(e, {
         autoAlpha: 0,
-        x: -200,
-        duration: 2,
+        x: -400,
+        duration: 3,
         delay: 1
       }, {
         autoAlpha: 1,
@@ -547,7 +547,7 @@ export default {
     iconsLeft5.forEach((e) => {
       iconsLeftT5.fromTo(e, {
         autoAlpha: 0,
-        x: -200,
+        x: -270,
         duration: 3,
         delay: 1
       }, {
@@ -563,13 +563,13 @@ export default {
       animation: iconsLeftT6,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 6,
       once: true
     });
     iconsLeft6.forEach((e) => {
       iconsLeftT6.fromTo(e, {
         autoAlpha: 0,
-        x: -200,
+        x: -400,
         duration: 2,
         delay: 1
       }, {
@@ -608,15 +608,15 @@ export default {
       animation: iconsRightT2,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 5,
       once: true
 
     });
     iconsRight2.forEach((e) => {
       iconsRightT.fromTo(e, {
         autoAlpha: 0,
-        x: 200,
-        duration: 2,
+        x: 400,
+        duration: 3,
         delay: 1
       }, {
         autoAlpha: 1,
@@ -654,14 +654,14 @@ export default {
       animation: iconsRightT4,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 5,
       once: true
     });
     iconsRight4.forEach((e) => {
       iconsRightT4.fromTo(e, {
         autoAlpha: 0,
-        x: 200,
-        duration: 2,
+        x: 400,
+        duration: 3,
         delay: 1
       }, {
         autoAlpha: 1,
@@ -699,15 +699,15 @@ export default {
       animation: iconsRightT6,
       start: "31%",
       end: '45%',
-      scrub: 4,
+      scrub: 5,
       once: true
 
     });
     iconsRight6.forEach((e) => {
       iconsRightT6.fromTo(e, {
         autoAlpha: 0,
-        x: 200,
-        duration: 2,
+        x: 300,
+        duration: 3,
         delay: 1
       }, {
         autoAlpha: 1,
