@@ -1,5 +1,5 @@
 <template>
-  <div class="forScroll">
+  <div class="forScroll" id="forScroll">
     <div class="header fixed-top">
       <div class="section section--header">
         <div class="container">
@@ -108,7 +108,7 @@
     </div>
 
     <section class="section section--basic fixed" id="first_screen">
-      <div class="container position-relative">
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <div class="icon--content">
@@ -255,6 +255,7 @@ export default {
       start: "1% 1%",
       end: '2% 2%',
       scrub: 2,
+      once: true
     });
 
     firstTime.fromTo(this.$refs.header__animate, {
@@ -272,6 +273,7 @@ export default {
       start: "3%",
       end: '9%',
       scrub: 4,
+      once: true
     });
     body.fromTo(this.$refs.body, {
       autoAlpha: 0,
@@ -287,14 +289,16 @@ export default {
     const lower = document.querySelectorAll('.body__text-1');
     ScrollTrigger.create({
       animation: lowerT,
-      start: "10% 10%",
-      end: '13% 13%',
-      scrub: 2.
+      start: "10%",
+      end: '13%',
+      scrub: 2,
+      once: true
     });
     lower.forEach((e) => {
       lowerT.fromTo(e, {
         autoAlpha: 0,
         y: 0,
+        duration: 3
       }, {
         autoAlpha: 1,
         y: -20,
@@ -306,9 +310,10 @@ export default {
     const lower2 = document.querySelectorAll('.body__text-2');
     ScrollTrigger.create({
       animation: lowerT2,
-      start: "11% 11%",
-      end: '14% 14%',
+      start: "11%",
+      end: '15%',
       scrub: 2,
+      once: true
     });
     lower2.forEach((e) => {
       lowerT2.fromTo(e, {
@@ -326,9 +331,11 @@ export default {
     const lower__second = document.querySelectorAll('.body__text-3');
     ScrollTrigger.create({
       animation: lower__secondT,
-      start: "14%",
-      end: '17%',
+      start: "16%",
+      end: '19%',
       scrub: 3,
+      once: true
+
     });
     lower__second.forEach((e) => {
       lower__secondT.fromTo(e, {
@@ -339,7 +346,7 @@ export default {
         autoAlpha: 1,
         y: -30,
         duration: 3
-      }, 2)
+      }, 3)
     });
 
     const animateButton = gsap.timeline();
@@ -349,6 +356,8 @@ export default {
       start: "18%",
       end: '23%',
       scrub: 3,
+      once: true
+
     });
     aButton.forEach((e) => {
       animateButton.fromTo(e, {
@@ -359,7 +368,7 @@ export default {
         autoAlpha: 1,
         y: -40,
         duration: 3
-      }, 3)
+      }, 4)
     });
 
 
@@ -370,6 +379,8 @@ export default {
       start: "24%",
       end: '26%',
       scrub: 2,
+      once: true
+
     });
     right__first__animation.forEach((e) => {
       right__first__animationT.fromTo(e, {
@@ -380,7 +391,7 @@ export default {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 4)
+      }, 5)
     });
 
 
@@ -389,38 +400,40 @@ export default {
     ScrollTrigger.create({
       animation: right__second__animationT,
       start: "24%",
-      end: '26%',
-      scrub: 2
+      end: '27%',
+      scrub: 2,
+      once: true
     });
     right__second__animation.forEach((e) => {
       right__second__animationT.fromTo(e, {
         autoAlpha: 0,
         y: 20,
-        duration: 0.5,
+        duration: 2,
       }, {
         autoAlpha: 1,
         y: -5,
-        duration: 1,
+        duration: 2,
         onStart: () => {
           document.getElementsByClassName('svg__circle')[0].classList.add('animate_svg')
         }
-      }, 4)
+      }, 6)
     });
-
-
 
     const left__first__animationT = gsap.timeline();
     const left__first__animation = document.querySelectorAll('.left__first__animation');
     ScrollTrigger.create({
       animation: left__first__animationT,
       start: "27%",
-      end: '30%',
+      end: '33%',
       scrub: 3,
+      once: true
+
     });
     left__first__animation.forEach((e) => {
       left__first__animationT.fromTo(e, {
         autoAlpha: 0,
-        y: 20,
+        y: 30,
+        duration: 2,
       }, {
         autoAlpha: 1,
         y: 0,
@@ -428,7 +441,7 @@ export default {
         onStart: () => {
           document.getElementsByClassName('left__arrow__animation')[0].classList.add('animate_svg')
         }
-      }, 5);
+      }, 7);
     });
 
 
@@ -437,19 +450,20 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT,
       start: "31%",
-      end: '40%',
-      scrub: 1,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsLeft.forEach((e) => {
       iconsLeftT.fromTo(e, {
         autoAlpha: 0,
-        x: -50,
-        duration: 3
+        x: -200
       }, {
         autoAlpha: 1,
-        x: 10,
+        x: 0,
         duration: 3,
-      }, 6)
+      }, 8)
     });
 
     const iconsLeftT2 = gsap.timeline();
@@ -457,19 +471,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT2,
       start: "31%",
-      end: '40%',
-      scrub: 2,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsLeft2.forEach((e) => {
       iconsLeftT2.fromTo(e, {
         autoAlpha: 0,
-        x: -60,
-        duration: 2
+        x: -200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
-        x: 20,
+        x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
 
@@ -478,19 +495,21 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT3,
       start: "31%",
-      end: '40%',
-      scrub: 3,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsLeft3.forEach((e) => {
       iconsLeftT3.fromTo(e, {
         autoAlpha: 0,
-        x: -70,
+        x: -200,
         duration: 3
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 3,
-      }, 6)
+      }, 8)
     });
 
     const iconsLeftT4 = gsap.timeline();
@@ -498,19 +517,21 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT4,
       start: "31%",
-      end: '40%',
-      scrub: 3,
+      end: '45%',
+      scrub: 4,
+      once: true
     });
     iconsLeft4.forEach((e) => {
       iconsLeftT4.fromTo(e, {
         autoAlpha: 0,
-        x: -60,
-        duration: 2
+        x: -200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
 
@@ -519,19 +540,21 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT5,
       start: "31%",
-      end: '40%',
-      scrub: 2,
+      end: '45%',
+      scrub: 4,
+      once: true
     });
     iconsLeft5.forEach((e) => {
       iconsLeftT5.fromTo(e, {
         autoAlpha: 0,
-        x: -70,
-        duration: 3
+        x: -200,
+        duration: 3,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 3,
-      }, 6)
+      }, 8)
     });
 
     const iconsLeftT6 = gsap.timeline();
@@ -539,19 +562,21 @@ export default {
     ScrollTrigger.create({
       animation: iconsLeftT6,
       start: "31%",
-      end: '40%',
-      scrub: 3,
+      end: '45%',
+      scrub: 4,
+      once: true
     });
     iconsLeft6.forEach((e) => {
       iconsLeftT6.fromTo(e, {
         autoAlpha: 0,
-        x: -80,
-        duration: 2
+        x: -200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
     const iconsRightT = gsap.timeline();
@@ -559,18 +584,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT,
       start: "31%",
-      end: '40%',
-      scrub: 1,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsRight.forEach((e) => {
       iconsRightT.fromTo(e, {
         autoAlpha: 0,
-        x: 50,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
-        duration: 2,
-      }, 6)
+        duration: 3,
+      }, 8)
     });
 
     const iconsRightT2 = gsap.timeline();
@@ -578,18 +607,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT2,
       start: "31%",
-      end: '40%',
-      scrub: 2,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsRight2.forEach((e) => {
       iconsRightT.fromTo(e, {
         autoAlpha: 0,
-        x: 60,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2
-      }, 6)
+      }, 8)
     });
 
     const iconsRightT3 = gsap.timeline();
@@ -597,18 +630,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT3,
       start: "31%",
-      end: '40%',
-      scrub: 2,
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsRight3.forEach((e) => {
       iconsRightT.fromTo(e, {
         autoAlpha: 0,
-        x: 40,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
     const iconsRightT4 = gsap.timeline();
@@ -616,18 +653,21 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT4,
       start: "31%",
-      end: '40%',
-      scrub: 3
+      end: '45%',
+      scrub: 4,
+      once: true
     });
     iconsRight4.forEach((e) => {
       iconsRightT4.fromTo(e, {
         autoAlpha: 0,
-        x: 70,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
     const iconsRightT5 = gsap.timeline();
@@ -635,18 +675,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT5,
       start: "31%",
-      end: '40%',
-      scrub: 2
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsRight5.forEach((e) => {
       iconsRightT5.fromTo(e, {
         autoAlpha: 0,
-        x: 60,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
         duration: 2,
-      }, 6)
+      }, 8)
     });
 
     const iconsRightT6 = gsap.timeline();
@@ -654,19 +698,22 @@ export default {
     ScrollTrigger.create({
       animation: iconsRightT6,
       start: "31%",
-      end: '40%',
-      scrub: 3
+      end: '45%',
+      scrub: 4,
+      once: true
+
     });
     iconsRight6.forEach((e) => {
       iconsRightT6.fromTo(e, {
         autoAlpha: 0,
-        x: 50,
+        x: 200,
+        duration: 2,
+        delay: 1
       }, {
         autoAlpha: 1,
         x: 0,
-        duration: 2,
-
-      }, 6)
+        duration: 2
+      }, 8)
     });
     const last = gsap.timeline();
     ScrollTrigger.create({
@@ -674,10 +721,13 @@ export default {
       start: "50%",
       end: '100%',
       scrub: 1,
+      once: true,
       onEnter: () => {
-        document.getElementsByClassName('section--basic')[0].classList.remove('fixed');
-        serverBus.$emit('finished');
-        console.log('1')
+        setTimeout(()=>{
+          document.getElementsByClassName('section--basic')[0].classList.remove('fixed');
+          serverBus.$emit('finished');
+
+        }, 1000)
       }
     });
     last.play();

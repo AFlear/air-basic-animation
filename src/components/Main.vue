@@ -1,7 +1,7 @@
 <template>
   <div>
     <firstScreenManualAnimation ref="first_screen"/>
-    <secondScreen ref="second_screen"/>
+    <secondScreen  ref="second_screen"/>
   </div>
 </template>
 
@@ -39,6 +39,10 @@ export default {
     serverBus.$on('finished', () => {
       const el = document.getElementById('second_screen').getBoundingClientRect();
       this.scrollTo(el.top + window.scrollX, el.top + window.scrollY, false);
+      setTimeout(()=>{
+        document.getElementById('forScroll').style.height = '1000px'
+
+      }, 1000)
     });
   }
 

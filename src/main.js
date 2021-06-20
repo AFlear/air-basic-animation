@@ -37,3 +37,4 @@ const wow = new WOW(
 );
 wow.init();
 window.wow = wow;
+history.scrollRestoration = 'manual';
